@@ -6,7 +6,7 @@ from datetime import datetime
 # ------------------------------
 # Configurações gerais (responsividade)
 # ------------------------------
-st.set_page_config(page_title="Emendas Parlamentares - Visualização", layout="wide")
+st.set_page_config(page_title="Emendas Parlamentares em grandes números", layout="wide")
 
 # Opcional: limitar largura máxima do conteúdo no desktop
 st.markdown("""
