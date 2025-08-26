@@ -197,7 +197,12 @@ unit2 = (
     alt.Chart(df_tipo)
     .encode(
         x=alt.X("Ano:O", title="", axis=alt.Axis(labelAngle=0, labelLimit=90)),
-        y=alt.Y("sum(loa_mais_credito):Q", axis=alt.Axis(title=None, labels=False, ticks=False))
+        y=alt.Y("sum(loa_mais_credito):Q", axis=alt.Axis(title=None, labels=False, ticks=False)),
+        tooltip=[
+            alt.Tooltip("Ano:O", title="Ano"),
+            alt.Tooltip("Funcao_desc:N", title="Função"),
+            alt.Tooltip("dotacao:N", title="Dotação")
+        ]
     )
 )
 
